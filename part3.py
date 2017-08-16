@@ -30,12 +30,15 @@ plt.plot(k)
 # TODO label axes + title
 
 # convolution
-spike_train = spike_train.astype(float)
+spike_train = spike_train.astype(float).transpose().flatten()
 estimated_voltage = np.convolve(spike_train, k, 'same')
-exit()
 
 # plot
-#time = #INCREMENT
+time = range(0,N)
 plt.subplot(2,1,1)
-plot(time, estimated_voltage)
+plt.plot(time, estimated_voltage)
 
+
+plt.subplot(2,1,2)
+plt.plot(time, spike_train)
+plt.show()
