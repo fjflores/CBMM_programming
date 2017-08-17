@@ -11,7 +11,6 @@ N = 50
 W = np.random.rand(M,N)
 W = 2*(W-0.5)
 
-# TODO check dimensions
+# define input vector
 x = np.random.rand(50) # random is the numpy package used to generate random numbers
-
 y = W*x
