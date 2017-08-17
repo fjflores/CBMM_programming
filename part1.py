@@ -12,5 +12,5 @@ W = np.random.rand(M,N)
 W = 2*(W-0.5)
 
 # define input vector
-x = np.random.rand(50) # random is the numpy package used to generate random numbers
+x = np.random.rand(N) # random is the numpy package used to generate random numbers
 y = W*x
