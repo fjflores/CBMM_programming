@@ -1,4 +1,4 @@
-function V = GenerateVoltage(p,T,Vreset,Vthresh,V0)
+function V = generatevoltage(p,T,Vreset,Vthresh,V0)
 
 V = zeros(1,T);
 V(1) = V0;
